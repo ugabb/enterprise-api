@@ -1,0 +1,25 @@
+{
+  "name": "enterprise-api",
+  "version": "1.0.0",
+  "main": "server.ts",
+  "author": "Gabriel Barros (ugab)",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.14.0",
+    "@rocketseat/eslint-config": "^2.2.2",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.12",
+    "dotenv": "^16.4.5",
+    "eslint": "^9.2.0",
+    "express": "^4.19.2",
+    "prisma": "^5.14.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.10.3",
+    "typescript": "^5.4.5",
+    "zod": "^3.23.8"
+  }
+}
