@@ -1,5 +1,6 @@
 import { Enterprise, Prisma } from "@prisma/client";
 import { EnterpriseRepository } from "../repositories/enterprise-repository";
+import { ResourceNotFoundError } from "./errors/resource-not-found-error";
 
 interface UpdateEnterpriseResponse {
   enterprise: Enterprise;
@@ -23,7 +24,7 @@ export class UpdateEnterpriseUseCase {
     const enterpriseExists = await this.enterpriseRepository.getEnterpriseById(id);
 
     if (!enterpriseExists) {
-      throw new Error("Enterprise not found");
+      throw new ResourceNotFoundError();
     }
 
     const updatedEnterprise = await this.enterpriseRepository.updateEnterprise(id, {
