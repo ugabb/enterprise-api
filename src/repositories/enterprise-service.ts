@@ -16,7 +16,19 @@ export class EnterpriseService implements EnterpriseRepository {
 
     return enterpriseList;
   }
-  async updateEnterprise(id: string, data: any): Promise<Enterprise> {
+
+  async getEnterpriseById(id: string): Promise<Enterprise | null> {
+    const enterprise = await prisma.enterprise.findUnique({
+      where: { id },
+    });
+
+    return enterprise;
+  }
+
+  async updateEnterprise(
+    id: string,
+    data: Prisma.EnterpriseUpdateInput
+  ): Promise<Enterprise> {
     const enterprise = await prisma.enterprise.update({
       where: { id },
       data,
