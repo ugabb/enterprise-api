@@ -53,6 +53,7 @@ yarn dev
 
 <h2 id="routes">📍 API Endpoints</h2>
 ​
+
 | route               | description                                          
 |----------------------|-----------------------------------------------------
 | <kbd>GET /enterprise</kbd>     | Lista todas os empreendimentos
