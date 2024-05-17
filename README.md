@@ -42,7 +42,7 @@ PORT=
 
 <h3>Starting</h3>
 
-How to start your project
+Como rodar o projeto
 
 ```bash
 cd enterprise-api
@@ -52,8 +52,6 @@ yarn dev
 ```
 
 <h2 id="routes">📍 API Endpoints</h2>
-
-Here you can list the main routes of your API, and what are their expected request bodies.
 ​
 | route               | description                                          
 |----------------------|-----------------------------------------------------
