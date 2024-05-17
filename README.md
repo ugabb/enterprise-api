@@ -3,9 +3,7 @@
 <p align="center">
  <a href="#tech">Technologies</a> • 
  <a href="#started">Getting Started</a> • 
-  <a href="#routes">API Endpoints</a> •
- <a href="#colab">Collaborators</a> •
- <a href="#contribute">Contribute</a>
+ <a href="#routes">API Endpoints</a> •
  <a href="https://github.com/ugabb/challenge-2024">Frontend</a> • 
 </p>
 
