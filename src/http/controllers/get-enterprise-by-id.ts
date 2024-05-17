@@ -15,7 +15,7 @@ export async function getEnterpriseById(req: Request, res: Response) {
 
     const enterprise = await getEnterpriseByIdUseCase.execute(id);
 
-    return res.status(200).json({ enterprise });
+    return res.status(200).json(enterprise);
   } catch (error) {
     if (error instanceof ResourceNotFoundError) {
       return res.status(404).json({ message: "❌ Recurso não encontrado!" });

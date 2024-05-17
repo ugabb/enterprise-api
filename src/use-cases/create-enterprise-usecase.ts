@@ -23,6 +23,9 @@ export class CreateEnterpriseUseCase {
       status,
     });
 
+    console.log({address});
+    
+
     return {
       enterprise,
     };

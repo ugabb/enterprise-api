@@ -1,18 +1,21 @@
-import { Enterprise, Prisma } from "@prisma/client";
-import { EnterpriseRepository } from "../repositories/enterprise-repository";
+import { Address, Enterprise, Prisma } from "@prisma/client";
+import {
+  EnterpriseRepository,
+  EnterpriseWithAddress,
+} from "../repositories/enterprise-repository";
 
 interface GetEnterprisesResponse {
-  enterprise: Enterprise[];
+  enterprises: EnterpriseWithAddress[];
 }
 
 export class GetEnterprisesUseCase {
   constructor(private enterpriseRepository: EnterpriseRepository) {}
 
   async execute(): Promise<GetEnterprisesResponse> {
-    const enterprise = await this.enterpriseRepository.getEnterprises();
+    const enterprises = await this.enterpriseRepository.getEnterprises();
 
     return {
-      enterprise,
+      enterprises,
     };
   }
 }

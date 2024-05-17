@@ -1,9 +1,9 @@
 import { Enterprise, Prisma } from "@prisma/client";
-import { EnterpriseRepository } from "../repositories/enterprise-repository";
+import { EnterpriseRepository, EnterpriseWithAddress } from "../repositories/enterprise-repository";
 import { ResourceNotFoundError } from "./errors/resource-not-found-error";
 
 interface GetBydIdEnterpriseResponse {
-  enterprise: Enterprise;
+  enterprise: EnterpriseWithAddress;
 }
 
 export class GetBydIdEnterpriseUseCase {
