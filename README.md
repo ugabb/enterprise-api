@@ -30,9 +30,9 @@ Como clonar
 git clone https://github.com/ugabb/enterprise-api.git
 ```
 
-<h3>Config .env variables</h2>
+<h3>Configurando variaveis de ambiente .env </h2>
 
-Use the `.env.example` as reference to create your configuration file `.env` with your AWS Credentials
+Use o `.env.example` como referência para criar o seu `.env`
 
 ```yaml
 DATABASE_URL="file:./dev.db"
