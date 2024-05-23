@@ -6,7 +6,9 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/server.ts"
+    "dev": "tsx watch src/server.ts",
+    "build": "tsup src --out-dir build",
+    "vercel-build": "prisma migrate deploy && prisma generate && tsup src --out-dir build"
   },
   "dependencies": {
     "@prisma/client": "^5.14.0",
@@ -23,8 +25,5 @@
     "tsx": "^4.10.3",
     "typescript": "^5.4.5",
     "zod": "^3.23.8"
-  },
-  "devDependencies": {
-    "tsup": "^8.0.2"
   }
 }
