@@ -12,7 +12,7 @@ model Enterprise {
   name      String
   status    String
   purpose   String
-  ri_number String
+  ri_number String?
   addressId String
   address   Address @relation(fields: [addressId], references: [id])
 }

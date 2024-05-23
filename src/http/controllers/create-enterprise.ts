@@ -14,7 +14,7 @@ export async function createEnterprise(req: Request, res: Response) {
         cep: z.string(),
     }),
     purpose: z.string(),
-    ri_number: z.string(),
+    ri_number: z.string().optional(),
     status: z.string(),
   });
 

@@ -15,7 +15,7 @@ export type EnterpriseWithAddress = {
   name: string;
   status: string;
   purpose: string;
-  ri_number: string;
+  ri_number?: string;
   addressId: string;
 };
 
