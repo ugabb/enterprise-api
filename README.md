@@ -4,7 +4,7 @@
  <a href="#tech">Technologies</a> • 
  <a href="#started">Getting Started</a> • 
  <a href="#routes">API Endpoints</a> •
- <a href="https://github.com/ugabb/challenge-2024">Frontend</a> • 
+ <a href="https://github.com/ugabb/enterprise-frontend">Frontend</a> • 
 </p>
 
 <p align="center">
